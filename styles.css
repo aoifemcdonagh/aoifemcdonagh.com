@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(315deg, #7b00ff, #fff);
+    font-size: 14px;
+    line-height:  22px;
+    color: #555555;
+
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.semi_bold{
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.resume{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+.resume .resume_left{
+    width: 280px;
+    background: #0bb5f4;
+}
+
+.resume .resume_left .resume_profile{
+    width: 100%;
+    height: 280px;
+}
+
+.resume .resume_left .resume_profile img{
+    width: 100%;
+    height: 100%;
+}
+
+.resume .resume_left .resume_content{
+    padding: 0 25px;
+}
+
+.resume .title{
+    margin-bottom: 20px;
+}
+
+.resume .resume_left .bold{
+    color: #fff;
+}
+
+.resume .resume_left .regular{
+    color: #b1eaff;
+}
+
+.resume .resume_item{
+    padding: 25px 0;
+    border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume_left .resume_item:last-child{
+    border-bottom: 0px;
+}
+
+.resume .resume_left ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.resume .resume_left ul li:last-child{
+    margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon{
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    color: #0bb5f4;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.resume .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data{
+    color: #b1eaff;
+}
+
+.resume .resume_left .resume_skills ul li{
+    color: #b1eaff;
+    justify-content: space-between;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name{
+    width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress{
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background:  #009fd9;
+    position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per{
+    width: 15%;
+
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+}
+
+/* Education page styles */
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+
+}
+.nav-link-wrapper a:hover {
+    color: black;
+    
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #0bb5f4;
+}
