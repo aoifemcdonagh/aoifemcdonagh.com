@@ -56,6 +56,16 @@ body{
     color: white;
 }
 
+.hero-text .hero-title{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.hero-text .hero-subtitle{
+    font-weight: 500;
+    font-size: 20px;
+}
+
 .hero-image .hero-content .hero-social{
     text-align: center;
     position: absolute;
@@ -356,7 +366,7 @@ a:active {
     background: black;
 }
 
-/* Education page styles */
+/* Nav wrapper styles */
 
 .nav-wrapper {
     display: flex;
@@ -381,31 +391,26 @@ a:active {
 }
 
 .nav-link-wrapper a {
-    color: #8a8a8a;
+    color: white;
     text-decoration: none;
     transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 
 }
 .nav-link-wrapper a:hover {
-    color: black;
-    
-}
-
-.active-nav-link {
-    border-bottom: 1px solid black;
+    color: white;  
 }
 
 .active-nav-link a {
-    color: black !important;
+    color: white;
 }
 
-.nav-wrapper > .right-side > div {
+.nav-wrapper .right-side a {
     margin-right: 20px;
     font-size: 0.9em;
     text-transform: uppercase;
-    color: #0bb5f4;
+    color: white;
 }
