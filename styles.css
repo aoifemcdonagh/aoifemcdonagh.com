@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: linear-gradient(315deg, #7b00ff, #fff);
+    background: #141414;
     font-size: 14px;
     line-height:  22px;
     color: #555555;
@@ -27,6 +27,69 @@ body{
     font-size: 16px;
 
 }
+
+/* Hero Image styles*/
+
+.hero-image {
+    background-image: url("images/milkyway.jpeg");
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    padding: 20% 25px;
+}
+
+.hero-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-image .hero-content .hero-social{
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-image .hero-content .hero-social ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-image .hero-content .hero-social ul li{
+    margin: 20px;
+}
+
+.hero-image .hero-content .hero-social ul li a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.hero-image .hero-content .hero-social ul li a .icon{
+    background: transparent;
+    transition: background 0.5s;
+}
+
+.hero-image .hero-content .hero-social ul li a:hover{
+    color: rgb(0, 183, 255); 
+}
+
+/* Resume styles */
 
 .resume{
     width: 800px;
