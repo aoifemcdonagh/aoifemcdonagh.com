@@ -372,6 +372,12 @@ a:active {
     display: flex;
     justify-content: space-between;
     padding: 38px;
+    background: rgba(0,0,0,0.2);
+    transition: background 0.5s;
+}
+
+.nav-wrapper:hover{
+    background: rgba(0,0,0,0.5);
 }
 
 .left-side {
