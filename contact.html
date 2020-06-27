@@ -9,13 +9,25 @@
 <body>
 
     <div class="hero-image">
-        <div class="nav-wrapper">
+        <div class="nav-wrapper" id="nav-wrapper">
             <div class="left-side">
-                <div class="nav-link-wrapper active-nav-link">
-                    <a href="index.html">About</a>
+                <div class="nav-link-wrapper active-nav-link dropdown">
+                    <div class="dropdown-menu">
+                        <a href="index.html">About</a>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="education.html">Education</a>
+                        <a href="hobbies.html">Hobbies</a>
+                    </div>
                 </div>
-                <div class="nav-link-wrapper active-nav-link">
-                    <a href="index.html">Projects</a>
+                <div class="nav-link-wrapper active-nav-link dropdown">
+                    <div class="dropdown-menu">
+                        Projects
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="projects.html">Academic</a>
+                        <a href="hobbies.html">Personal</a>
+                    </div>
                 </div>
                 <div class="nav-link-wrapper active-nav-link">
                     <a href="contact.html">Contact</a>
@@ -26,6 +38,23 @@
                 <a href="index.html">AOIFE MCDONAGH</a>
             </div>
         </div>
+
+        <!-- Javascript to make navbar sticky -->
+        <script>
+            window.onscroll = function() {makeSticky()};
+            
+            var navbar = document.getElementById("nav-wrapper"); 
+            var sticky = navbar.offsetTop;
+            
+            function makeSticky() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+
 
         <div class="hero-content">
             

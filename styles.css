@@ -32,7 +32,6 @@ body{
 
 .hero-image {
     background-image: url("images/milkyway.jpeg");
-    height: 75%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -249,7 +248,7 @@ body{
 }
 
 .resume .resume_right ul li .date{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -285,6 +284,10 @@ body{
     width: 3px;
     height: 250px;
     background: #0bb5f4;
+}
+
+.bullet-points{
+    margin-left: 1em;
 }
 
 .resume .resume_right .resume_hobby ul{
@@ -366,7 +369,7 @@ a:active {
     background: black;
 }
 
-/* Nav wrapper styles */
+/* Navbar styles */
 
 .nav-wrapper {
     display: flex;
@@ -386,7 +389,7 @@ a:active {
 
 .nav-wrapper > .left-side > div {
     margin-right: 20px;
-    font-size: 0.9em;
+    
     text-transform: uppercase;
 }
 
@@ -416,7 +419,63 @@ a:active {
 
 .nav-wrapper .right-side a {
     margin-right: 20px;
-    font-size: 0.9em;
+    
     text-transform: uppercase;
     color: white;
 }
+
+.dropdown{
+    overflow: hidden;
+}
+
+.dropdown .dropdown-menu{
+    color: white;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    text-transform: uppercase;
+    background: rgba(0,100,0,0.2);
+    transition: background 0.5s;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    transition: background 0.5s;
+    float: none;
+    padding: 15px 10px;
+    display: block;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background: rgba(0,0,0,0.5);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+  }
