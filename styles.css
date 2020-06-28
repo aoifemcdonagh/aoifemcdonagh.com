@@ -166,27 +166,68 @@ body{
 
 /* Work Experience styles */
 
-.work-experience{
-    padding: 50px;
+.work-experience,
+.education{
     text-align: center;
 }
 
-.work-experience-container{
-    display: flex;
-    flex-direction: column;
-    margin: 100px;
+.work-experience-container,
+.education-container{
+    
+    
 }
 
-.work-experience .work-experience-container ul li{
-    display: flex;
+.work-experience .work-experience-container ul,
+.education .education-container ul{
+    width: 80vw;
+    display: inline-block
 }
 
-.work-experience-left img{
-    height: 200px;
-    width: 200px;
+.work-experience .work-experience-container ul li,
+.education .education-container ul li{
+    display: flex;
+    margin: 10px;
+}
+
+.work-experience-left img,
+.education-right img{
+    height: 250px;
+    width: 250px;
     border-radius: 15%;
-    border: 2px solid black;
+    margin: 10px;
 }
+
+.work-experience-right,
+.education-left{
+    padding: 30px;
+}
+
+.job-title,
+.degree{
+    color:rgb(255, 145, 0);
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.work-experience-right .date,
+.education-left .date{
+    color:  rgb(0, 183, 255);
+    text-align: left;
+}
+
+.work-experience-right p,
+.education-left p{
+    text-align: left;
+}
+
+.education-left .university{
+    text-align: left;
+}
+
+
+/* Education Styles */
+
 
 /* Resume styles */
 
