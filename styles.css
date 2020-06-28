@@ -163,6 +163,31 @@ body{
     color: black; 
 }
 
+
+/* Work Experience styles */
+
+.work-experience{
+    padding: 50px;
+    text-align: center;
+}
+
+.work-experience-container{
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.work-experience .work-experience-container ul li{
+    display: flex;
+}
+
+.work-experience-left img{
+    height: 200px;
+    width: 200px;
+    border-radius: 15%;
+    border: 2px solid black;
+}
+
 /* Resume styles */
 
 .resume{
