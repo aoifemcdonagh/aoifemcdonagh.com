@@ -13,7 +13,6 @@ body{
     font-size: 14px;
     line-height:  22px;
     color: black;
-
 }
 
 .heading{
@@ -38,12 +37,25 @@ body{
 
 /* Hero Image styles*/
 
-.hero-image {
+.hero-image{
     background-image: url("images/milkyway.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
 }
 
 .hero-content{
@@ -380,6 +392,70 @@ body{
     display: none;
 }
 
+/* Contact info styles */
+
+.contact{  
+    color: white;
+    background: grey;
+    padding: 50px;
+}
+
+.contact .heading{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.contact .contact-info{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.contact .contact-info .column{
+    float: left;
+    padding: 10px;
+}
+
+.contact .contact-info .row{
+    display: flex;
+    direction: horizontal;
+    justify-content: center;
+    margin: 40px;
+}
+
+.contact .contact-info .row .email-address{
+    display: flex;
+    direction: vertical;
+    justify-content: center;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.contact .contact-info ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+.contact .contact-info .icon{
+    margin: 10px;
+    display: inline-table;
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: #0bb5f4;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.contact .contact-info i{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
 
 /* Link styles */
 
@@ -422,6 +498,25 @@ a:active {
     background: black;
 }
 
+.contact .contact-info ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.contact .contact-info ul li a .icon{
+    background: white;
+    transition: background 0.5s;
+}
+
+.contact .contact-info ul li a:hover{
+    color: black; 
+}
+
+.contact .contact-info ul li a:hover .icon{
+    background: black;
+}
+
 /* Navbar styles */
 
 .nav-wrapper {
@@ -433,7 +528,7 @@ a:active {
 }
 
 .nav-wrapper:hover{
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
 }
 
 .left-side {
@@ -502,33 +597,33 @@ a:active {
     z-index: 1;
 }
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
+/* Links inside the dropdown */
+.dropdown-content a {
     color: white;
     text-decoration: none;
     transition: background 0.5s;
     float: none;
     padding: 15px 10px;
     display: block;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background: rgba(0,0,0,0.5);
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+}
 
-  .sticky{
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sticky{
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
 
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
     padding-top: 60px;
-  }
+}
