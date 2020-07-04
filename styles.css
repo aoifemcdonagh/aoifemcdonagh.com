@@ -20,7 +20,6 @@ body{
     font-weight: 500;
     font-size: 28px;
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
 
 .bold{
@@ -78,6 +77,7 @@ body{
 .hero-text .hero-title{
     font-weight: 700;
     font-size: 4em;
+    margin: 50px;
 }
 
 .hero-text .hero-subtitle{
@@ -96,17 +96,25 @@ body{
 /* Summary Styles */
 
 .summary {
-    width: 900px;
-    justify-content: center;
+    text-align: center;
+    margin: 100px;
+    
+}
+
+.summary-conatiner{
+    
     display: flex;
-    align-items: flex-start;
-    margin: 50px auto;
+}
+
+.summary-column{
+    width: 25vw;
+    display: inline-block;
+    vertical-align: top;
+    
 }
 
 .summary .summary-img{
-    width: 50%;
-    height: auto;
-    justify-content: center;
+    vertical-align: top;
 }
 
 .summary img {
@@ -115,27 +123,16 @@ body{
     border-radius: 50%;
     padding: 20px;
     background-color: wheat;
-    margin: 20px;
 }
 
-.summary .about{
-    width: 300px;
-    height: auto;
-    margin: 20px;
-}
-
-.summary .details{
-    margin: 20px;
-    display: flex;
-    display: block;
+.summary .about p{
+    text-align: left; 
+    margin: 10px;
 }
 
 .summary .details p{
+    text-align: left;
     margin: 5px;
-}
-
-.summary .details .summary-social{
-    justify-content: left;
 }
 
 .summary .details .summary-social ul{
@@ -169,6 +166,7 @@ body{
 .work-experience,
 .education{
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .work-experience .work-experience-container ul,
@@ -218,6 +216,111 @@ body{
 .education-left .university{
     text-align: left;
 }
+
+
+/* Project styles */ 
+
+.projects{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projects-top{
+    display: inline-block;
+    background: rgb(214, 214, 214);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100vw;
+}
+
+.project-container{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-contents{
+    margin: 20px;
+}
+
+.projects .heading{
+    text-align: center;
+    padding: 40px;
+}
+
+.projects .project-container .heading{
+    color: white;
+    text-align: left;
+}
+
+.projects .project-container p{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+/* Project image background styles */
+.project-image-background{
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 90vw;
+}
+
+.project-contents a{
+    color: white;
+    text-decoration: underline;
+}
+
+.projects .project1{
+    background-image: url("images/projects/vr1.jpg");
+}
+
+.projects .project2{
+    background-image: url("images/projects/audio.jpg");
+}
+
+.projects .project3{
+    background-image: url("images/projects/gaming.jpg");
+}
+
+/* ------------------------------- */
+
+
+.project-container ul {
+    margin: 20px;
+}
+
+.project-container ul li{
+    margin: 20px;
+}
+
+.project-github{
+    width: 200px;
+    height: 100px;
+    color: black;
+    background-color: grey;
+    border-radius: 20%;
+    border: black 2px solid;
+}
+
+.project-page-link{
+    display: none;  /* replace 'none' with 'inline-block' when suitable link ready */
+    color: white;
+    font-size: 28px;
+    width: max-content;
+    height: max-content;
+    background: rgba(0,0,0,0.2);
+    transition: background 0.5s;
+}
+
+.project-page-link:hover{
+    background: rgba(0,0,0,1);
+}
+
 
 /* Contact info styles */
 
@@ -305,45 +408,6 @@ body{
 
 /* Link styles */
 
-/* unvisited link */
-a:link {
-    text-decoration: none;
-}
-
-/* visited link */
-a:visited {
-    text-decoration: none;
-}
-
-/* mouse over link */
-a:hover {
-    text-decoration: none;
-}
-
-/* selected link */
-a:active {
-    text-decoration: none;
-}
-
-/* Link styles for social */
-.resume_left .resume_content ul li a{
-    color: white;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-.resume_left .resume_content ul li a .icon{
-    background: white;
-    transition: background 0.5s;
-}
-
-.resume_left .resume_content ul li a:hover{
-    color: black; 
-}
-
-.resume_left .resume_content ul li a:hover .icon{
-    background: black;
-}
-
 .contact .contact-info ul li a{
     color: white;
     text-decoration: none;
@@ -361,6 +425,16 @@ a:active {
 
 .contact .contact-info ul li a:hover .icon{
     background: black;
+}
+
+
+/* Zoom image styles */
+.zoom-img{
+    transition: transform 0.2s;
+}
+
+.zoom-img:hover{
+    transform: scale(1.2);
 }
 
 /* Navbar styles */

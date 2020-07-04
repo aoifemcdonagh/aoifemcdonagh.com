@@ -41,7 +41,7 @@
 
         <div class="hero-content">
             <div class="hero-text">
-                <div class="hero-title" style="margin: 20px;">Aoife McDonagh</div>
+                <div class="hero-title">Aoife McDonagh</div>
                 <div class="hero-subtitle">An engineer in search of purpose</div>
             </div>
 
@@ -50,81 +50,78 @@
     </div>
 
     <div class="summary">
-        <div class="details">
-            <div>
+        <div class="summary-container">
+            <div class="details summary-column">
                 <p class="heading">Details</p>
                 <p class="semi-bold">Name</p>
                 <p>Aoife McDonagh</p>
                 <p class="semi-bold">Location</p>
                 <p>Mullingar, Co. Westmeath, Ireland</p>
+                
+                <div class="summary-social">
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/aoifeai" target="_blank">
+                                <div class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/aoife-mcdonagh-6241b3aa/" target="_blank">
+                                <div class="icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/aoifemcdonagh" target="_blank">
+                                <div class="icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/aoife__mcdonagh/" target="_blank">
+                                <div class="icon">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
-            
-            <div class="summary-social">
-                <ul>
-                    <li>
-                        <a href="https://twitter.com/aoifeai" target="_blank">
-                            <div class="icon">
-                                <i class="fab fa-twitter"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/aoife-mcdonagh-6241b3aa/" target="_blank">
-                            <div class="icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/aoifemcdonagh" target="_blank">
-                            <div class="icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/aoife__mcdonagh/" target="_blank">
-                            <div class="icon">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            <div class="summary-img summary-column">
+                <img src="images/profile.jpg" alt="profile_pic">
             </div>
-            
-        </div>
-        <div class="summary-img">
-            <img src="images/profile.jpg" alt="profile_pic">
-        </div>
-        <div class="about">
-            <p class="heading">
-                About Me
-            </p>
-            <p>
-                I am an enthusiastic engineer focused on machine learning projects. 
-                I conducted my master’s thesis on audio synthesis and room acoustic analysis using deep learning methods. 
-                I am an independent learner and am eager to apply technical skills to new areas. 
-                I am comfortable in both research and software development environments.
-            </p>
+            <div class="about summary-column">
+                <p class="heading">About Me</p>
+                <p>
+                    I am an enthusiastic engineer focused on machine learning projects. 
+                    I conducted my master’s thesis on audio synthesis and room acoustic analysis using deep learning methods. 
+                    I am an independent learner and am eager to apply technical skills to new areas. 
+                    I am comfortable in both research and software development environments.
+                </p>
+            </div>
         </div>
         
     </div>
 
+   
     <div class="work-experience">
         <div class="heading" style="margin: 20px;">Where I've Worked</div>
 
         <div class="work-experience-container">
             <ul>
                 <li>
-                    <div class="work-experience-left">
+                    <div class="work-experience-left zoom-img">
                         <img src="images/work_experience/xperi.jpg" alt="">
                     </div>
                     <div class="work-experience-right">
                         <div class="job-title">R&D Engineer, <b>Xperi</b></div>
-                        
-                        <div class="date">2017 - 2019</div>
+                        <div class="date">September 2017 - December 2019</div>
                         <div class="info">
-                            
                                 <p>
                                     Conducted research in the field deep learning with applications to audio processing. 
                                     Resulted in filing of two provisional patent applications.
@@ -138,7 +135,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="work-experience-left">
+                    <div class="work-experience-left zoom-img">
                         <img src="images/work_experience/intel1.jpg" alt="">
                     </div>
                     <div class="work-experience-right">
@@ -154,7 +151,7 @@
                     
                 </li>
                 <li>
-                    <div class="work-experience-left">
+                    <div class="work-experience-left zoom-img">
                         <img src="images/work_experience/intel2.jpg" alt="">
                     </div>
                     <div class="work-experience-right">
@@ -169,6 +166,81 @@
             </ul>
         </div>
     </div>
+
+    <div class="projects">
+        <div class="">
+            <div class="heading">Academic projects</div>
+        </div>
+
+        <div class="project-container">
+            <div class="project-image-background project1 parallax">
+                <div class="project-contents">            
+                    <div class="heading">How to make a camera hear</div>
+                    <ul>
+                        <li>
+                            <p>How do you gather information about the acoustic environment using only an image sensor?</p>
+                        </li>
+                        <li>
+                            <p>Audio engineers can guess room acoustic properties from images from prior experience</p>
+                        </li>
+                        <li>
+                            <p>Could a Machine Learning based approach perform similarly?</p>
+                        </li>
+                    </ul> 
+                    
+                    <div class="project-page-link">
+                        Read more about this project
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-container">
+            <div class="project2 project-image-background parallax">
+                <div class="project-contents">
+                    
+                    <div class="heading">Python Tooklit for Google's Audioset Dataset</div>
+                    <p>Google's AudioSet is a large audio event class dataset, analogous to the <a href="http://www.image-net.org/" target="_blank">ImageNet</a> dataset for image classification.</p>
+                    <p>Problems with obtaining AudioSet data:</p>
+                    <ul>
+                        <li>
+                            <p>
+                                Not available in raw audio format (e.g. mp3)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Cannot download subsets of entire dataset if required.
+                            </p>
+                        </li>
+                    </ul>
+                    <p>Solution:</p>
+                    <ul>
+                        <li>
+                            <p>Toolkit downloads raw audio format directly from YouTube</p>
+                        </li>
+                        <li>
+                            <p>Can download subsets of entire dataset if required</p>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project3 project-image-background parallax">
+                <div class="project-contents">
+                    <div class="heading">Creating novel game audio using GANs</div>
+
+                    <div class="project-page-link">
+                        Read more about this project
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="education">
         <div class="heading" style="margin: 20px;">What I've Learned</div>
@@ -187,7 +259,7 @@
                             <p>Performed audio synthesis using WaveGAN and AudioSet database. </p>
                         </div>
                     </div>
-                    <div class="education-right">
+                    <div class="education-right zoom-img">
                         <img src="images/education/masters.jpg" alt="">
                     </div>
                 </li>
@@ -203,7 +275,7 @@
                             <p>Classifying regional dialects of Irish using Digital Signal Processing techniques and Convolutional Neural Networks. (Final Year Project)</p>
                         </div>
                     </div>
-                    <div class="education-right">
+                    <div class="education-right zoom-img">
                         <img src="images/education/bachelors.jpg" alt="">
                     </div>
                 </li>
@@ -291,3 +363,46 @@
 
 </body>
 </html>
+
+ <!--
+    <div class="skills">
+        <div class="heading">Skills</div>
+
+        <div class="skills-container">
+            <ul>
+                <li>
+                    <div class="skill_name">
+                        Machine Learning
+                    </div>
+                    <div class="skill_progress">
+                        <span style="width: 80%;"></span>
+                    </div>
+                </li>
+                <li>                
+                    <div class="skill_name">
+                        Git
+                    </div>
+                    <div class="skill_progress">
+                        <span style="width: 90%;"></span>
+                    </div>
+                </li>
+                <li>                
+                    <div class="skill_name">
+                        Python
+                    </div>
+                    <div class="skill_progress">
+                        <span style="width: 70%;"></span>
+                    </div>
+                </li>
+                <li>                  
+                    <div class="skill_name">
+                        HTML & CSS
+                    </div>
+                    <div class="skill_progress">
+                        <span style="width: 50%;"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    -->
