@@ -15,10 +15,18 @@ body{
     color: black;
 }
 
+.section-heading{
+    color: rgb(10, 156, 240);
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 60px;
+}
+
 .heading{
     color: rgb(10, 156, 240);
     font-weight: 500;
-    font-size: 28px;
+    font-size: 40px;
     text-transform: uppercase;
 }
 
@@ -111,6 +119,10 @@ body{
     display: inline-block;
     vertical-align: top;
     
+}
+
+.summary .heading{
+    font-size: 28px;
 }
 
 .summary .summary-img{
@@ -226,16 +238,6 @@ body{
     margin-bottom: 50px;
 }
 
-.projects-top{
-    display: inline-block;
-    background: rgb(214, 214, 214);
-    text-align: center;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    width: 100vw;
-}
-
 .project-container{
     display: inline-block;
     text-align: center;
@@ -243,8 +245,14 @@ body{
 }
 
 .project-contents{
-    padding: 40px;
+    padding: 90px;
     text-align: center;
+}
+
+.project-contents .heading{
+    font-size: 40px;
+    line-height: 48px;
+    background-color: rgba(0,0,0,0.7);
 }
 
 .projects .heading,
@@ -253,13 +261,12 @@ body{
     padding: 40px;
 }
 
-.projects .project-container .heading{
+.project-contents .heading{
     color: white;
-    
 }
 
 .projects .project-container p{
-    color: white;
+    text-align: left;
     font-size: 20px;
     line-height: 25px;
     margin-left: 40px;
@@ -267,6 +274,7 @@ body{
 
 /* Project image background styles */
 .project-image-background{
+    display: inline-block;
     background-position: center;
     background-size: cover;
     height: max-content;  /* max-conent works when padding is used for project-contents*/
@@ -279,14 +287,17 @@ body{
 }
 
 .projects .project1{
-    background-image: url("images/projects/vr1.jpg");
+    display: inline-block;
+    background-image: url("images/projects/vs.jpg");
 }
 
 .projects .project2{
+    display: inline-block;
     background-image: url("images/projects/audio.jpg");
 }
 
 .projects .project3{
+    display: inline-block;
     background-image: url("images/projects/gaming.jpg");
 }
 
@@ -301,33 +312,49 @@ body{
     margin: 20px;
 }
 
-.project-github{
-    width: 200px;
-    height: 100px;
-    color: black;
-    background-color: grey;
-    border-radius: 20%;
-    border: black 2px solid;
-}
-
 .project-links{
-    margin: 50px;
+    margin: 20px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    text-align: center;
 }
 
-.project-info-link{
+.project-info-link-wrapper{
     display: inline-block;  /* replace 'none' with 'inline-block' when suitable link ready */
     color: white;
     font-size: 25px;
-    width: 30vw;
-    height: 5vw;
-    background: rgba(63, 63, 63, 0.5);
+    width: max-content;
+    height: max-content;
+    background: rgba(0,0,0,0.7);
     transition: background 0.5s;
+    transition: font-size 0.5s;
     line-height: 30px;
+    margin: 10px;
 }
-.project-info-link:hover{
+
+/* Make project links stack vertically when screen width is less than 1200px */
+@media screen and (max-width: 1200px) {
+    .project-links {
+        flex-direction: column;
+    }
+}
+
+.project-info-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 20px;
+}
+
+.project-info-link-wrapper:hover{
     background: rgba(0,0,0,1);
+    font-size: 30px;
+}
+
+.project-info-link .icon{
+    margin-right: 10px;
 }
 
 
