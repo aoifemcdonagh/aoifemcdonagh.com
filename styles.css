@@ -211,6 +211,7 @@ body{
 .work-experience-right p,
 .education-left p{
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .education-left .university{
@@ -242,23 +243,25 @@ body{
 }
 
 .project-contents{
-    margin: 20px;
+    padding: 40px;
+    text-align: center;
 }
 
-.projects .heading{
+.projects .heading,
+.interests .heading{
     text-align: center;
     padding: 40px;
 }
 
 .projects .project-container .heading{
     color: white;
-    text-align: left;
+    
 }
 
 .projects .project-container p{
     color: white;
     font-size: 20px;
-    text-align: left;
+    line-height: 25px;
     margin-left: 40px;
 }
 
@@ -266,7 +269,7 @@ body{
 .project-image-background{
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: max-content;  /* max-conent works when padding is used for project-contents*/
     width: 90vw;
 }
 
@@ -307,18 +310,30 @@ body{
     border: black 2px solid;
 }
 
-.project-page-link{
-    display: none;  /* replace 'none' with 'inline-block' when suitable link ready */
-    color: white;
-    font-size: 28px;
-    width: max-content;
-    height: max-content;
-    background: rgba(0,0,0,0.2);
-    transition: background 0.5s;
+.project-links{
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.project-page-link:hover{
+.project-info-link{
+    display: inline-block;  /* replace 'none' with 'inline-block' when suitable link ready */
+    color: white;
+    font-size: 25px;
+    width: 30vw;
+    height: 5vw;
+    background: rgba(63, 63, 63, 0.5);
+    transition: background 0.5s;
+    line-height: 30px;
+}
+.project-info-link:hover{
     background: rgba(0,0,0,1);
+}
+
+
+/* Interests styles */
+.interests{
+    text-align: center;
 }
 
 
