@@ -4,58 +4,18 @@
     <meta charset="utf-8" />
     <title>Aoife McDonagh</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/16bfceb894.js" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#header').load("navbar.html");
+        });
+    </script>
 </head>
 <body>
 
     <div class="hero-image">
-        <div class="nav-wrapper" id="nav-wrapper">
-            <div class="left-side">
-                <div class="nav-link-wrapper active-nav-link dropdown">
-                    <div class="dropdown-menu">
-                        <a href="index.html">About</a>
-                    </div>
-                    <div class="dropdown-content">
-                        <a href="education.html">Education</a>
-                        <a href="hobbies.html">Hobbies</a>
-                    </div>
-                </div>
-                <div class="nav-link-wrapper active-nav-link dropdown">
-                    <div class="dropdown-menu">
-                        Projects
-                    </div>
-                    <div class="dropdown-content">
-                        <a href="projects.html">Academic</a>
-                        <a href="hobbies.html">Personal</a>
-                    </div>
-                </div>
-                <div class="nav-link-wrapper active-nav-link">
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-    
-            <div class="nav-link-wrapper active-nav-link">
-                <a href="index.html">AOIFE MCDONAGH</a>
-            </div>
-        </div>
-
-        <!-- Javascript to make navbar sticky -->
-        <script>
-            window.onscroll = function() {makeSticky()};
-            
-            var navbar = document.getElementById("nav-wrapper"); 
-            var sticky = navbar.offsetTop;
-            
-            function makeSticky() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-        </script>
-
-
+        <header id="header"></header>
         <div class="hero-content">
             <!-- 
             <div class="resume-profile">
@@ -66,39 +26,6 @@
             <div class="hero-text">
                 <div class="hero-title" style="margin: 20px;">Education</div>
                 <div class="hero-subtitle">As you can see I still have a lot of HTML and CSS to learn. Check back soon!</div>
-            </div>
-
-            <div class="hero-social">
-                <ul>
-                    <li>
-                        <a href="https://twitter.com/aoifeai" target="_blank">
-                            <div class="icon">
-                                <i class="fab fa-twitter"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/aoife-mcdonagh-6241b3aa/" target="_blank">
-                            <div class="icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/aoifemcdonagh" target="_blank">
-                            <div class="icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/aoife__mcdonagh/" target="_blank">
-                            <div class="icon">
-                                <i class="fab fa-instagram"></i>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
             </div>
 
         </div>

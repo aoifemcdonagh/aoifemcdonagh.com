@@ -1,0 +1,47 @@
+<div class="nav-wrapper" id="nav-wrapper">
+    <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link dropdown">
+            <div class="dropdown-menu">
+                <a href="index.html" target="_top">About</a>
+            </div>
+            <div class="dropdown-content">
+                <a href="education.html" target="_top">Education</a>
+                <a href="hobbies.html" target="_top">Hobbies</a>
+            </div>
+        </div>
+        <div class="nav-link-wrapper active-nav-link dropdown">
+            <div class="dropdown-menu">
+                Projects
+            </div>
+            <div class="dropdown-content">
+                <a href="projects.html" target="_top">Academic</a>
+                <a href="hobbies.html" target="_top">Personal</a>
+            </div>
+        </div>
+        <div class="nav-link-wrapper active-nav-link">
+            <a href="contact.html" target="_top">Contact</a>
+        </div>
+    </div>
+
+    <div class="nav-link-wrapper active-nav-link">
+        <a href="index.html" target="_top">AOIFE MCDONAGH</a>
+    </div>
+</div>
+
+<!-- Javascript -->
+
+<!-- Make navbar sticky -->
+<script>
+    window.onscroll = function() {makeSticky()};
+    
+    var navbar = document.getElementById("nav-wrapper"); 
+    var sticky = navbar.offsetTop;
+    
+    function makeSticky() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+</script>

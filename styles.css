@@ -43,6 +43,120 @@ body{
 
 }
 
+
+/* Navbar styles */
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: rgba(0,0,0,0.1);
+    transition: background 0.5s;
+    position: relative;
+}
+
+.nav-wrapper:hover{
+    background: rgba(0,0,0,0.8);
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid white;
+
+}
+.nav-link-wrapper a:hover {
+    color: white;  
+}
+
+.active-nav-link a {
+    color: white;
+}
+
+.nav-wrapper .right-side a {
+    margin-right: 20px;
+    
+    text-transform: uppercase;
+    color: white;
+}
+
+.dropdown{
+    overflow: hidden;
+}
+
+.dropdown .dropdown-menu{
+    color: white;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    text-transform: uppercase;
+    background: rgba(0,100,0,0.2);
+    transition: background 0.5s;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    transition: background 0.5s;
+    float: none;
+    padding: 15px 10px;
+    display: block;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+
 /* Hero Image styles*/
 
 .hero-image{
@@ -434,11 +548,11 @@ if no 'space-between' then image will not be stay right if not enough text on le
     width: 100%;
     height: auto;
     filter: grayscale(100%);
-    transition: filter 0.5s;
+    transition: filter 0.5s;    
 }
 
 .interest-images .interest-image-wrapper img:hover{
-    filter: grayscale(0%);
+    filter: grayscale(0%);    
 }
 
 @media (min-width: 900px) {
@@ -582,113 +696,3 @@ if no 'space-between' then image will not be stay right if not enough text on le
     transform: scale(1.2);
 }
 
-/* Navbar styles */
-
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    background: rgba(0,0,0,0.2);
-    transition: background 0.5s;
-}
-
-.nav-wrapper:hover{
-    background: rgba(0,0,0,0.8);
-}
-
-.left-side {
-    display: flex;
-}
-
-.nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    
-    text-transform: uppercase;
-}
-
-.nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-.nav-link-wrapper a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-.nav-link-wrapper:hover {
-    border-bottom: 1px solid white;
-
-}
-.nav-link-wrapper a:hover {
-    color: white;  
-}
-
-.active-nav-link a {
-    color: white;
-}
-
-.nav-wrapper .right-side a {
-    margin-right: 20px;
-    
-    text-transform: uppercase;
-    color: white;
-}
-
-.dropdown{
-    overflow: hidden;
-}
-
-.dropdown .dropdown-menu{
-    color: white;
-    border: none;
-    outline: none;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content{
-    display: none;
-    position: absolute;
-    text-transform: uppercase;
-    background: rgba(0,100,0,0.2);
-    transition: background 0.5s;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-  
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: white;
-    text-decoration: none;
-    transition: background 0.5s;
-    float: none;
-    padding: 15px 10px;
-    display: block;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background: rgba(0,0,0,0.5);
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-    padding-top: 60px;
-}
