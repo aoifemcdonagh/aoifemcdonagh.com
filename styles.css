@@ -19,6 +19,7 @@ body{
     color: rgb(10, 156, 240);
     font-weight: 500;
     font-size: 40px;
+    line-height: 48px;
     text-transform: uppercase;
     padding: 60px;
 }
@@ -209,9 +210,17 @@ body{
     display: inline-block
 }
 
-.work-experience .work-experience-container ul li,
+.work-experience .work-experience-container ul li{
+    display: flex;
+    margin: 10px;
+}
+
+/* Need to add 'justify-content: space-between;' to list items in this class
+The image is on the right and text on left side is algned left
+if no 'space-between' then image will not be stay right if not enough text on left to keep it there*/
 .education .education-container ul li{
     display: flex;
+    justify-content: space-between;
     margin: 10px;
 }
 
@@ -386,6 +395,77 @@ body{
     text-align: center;
 }
 
+.interest{
+    text-align: center;
+}
+
+.interest-container{
+    margin: 50px;
+}
+
+.interest-blurb{
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.interest-blurb p{
+    font-size: 28px;
+    line-height: 32px;
+}
+
+@media (min-width: 900px) {
+    .interest-images{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.interest-images .interest-image-wrapper{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.interest-images .interest-image-wrapper img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+
+.interest-images .interest-image-wrapper img:hover{
+    filter: grayscale(0%);
+}
+
+@media (min-width: 900px) {
+    .blog-post-container{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.blog-post-container .blog-post-wrapper{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.blog-post-container .blog-post-wrapper a img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+
+.blog-post-container .blog-post-wrapper a img:hover{
+    filter: grayscale(0%);
+}
 
 /* Contact info styles */
 
@@ -415,14 +495,14 @@ body{
     clear: both;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 900px) {
     .column {
       width: 100%;
     }
 }
 
 .row{
-    margin: 50px;
+    margin: 20px;
 }
 
 .contact-info{
