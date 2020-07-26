@@ -224,7 +224,7 @@ body{
 
 .summary-container{
     display: inline-block;
-    width: 80vw;
+    width: 60vw;
 }
 
 .summary-details{
@@ -309,9 +309,9 @@ body{
 
 /* Summary styles for narrow page */
 
-@media (max-width: 1000px){
+@media (max-width: 1200px){
     .summary .heading,
-    .summary p {
+    .summary-details p {
         text-align: center;
     }
 
@@ -320,13 +320,17 @@ body{
         height: 300px;
     }
 
+    .summary-container{
+        max-width: 400px;
+    }
+
     .summary-content{
         margin-left: 30px;
         margin-right: 30px;
     }
 }
 /* Grid until minimum width */
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .summary-content{
         display: grid;
         grid-auto-rows: auto;
@@ -367,37 +371,38 @@ if no 'space-between' then image will not be stay right if not enough text on le
 .education-right img{
     height: 250px;
     width: 250px;
-    border-radius: 15%;
+    border-radius: 10%;
     margin: 10px;
 }
 
 .work-experience-right,
 .education-left{
     padding: 30px;
+    text-align: left;
 }
 
 .job-title,
 .degree{
-    color:rgb(255, 145, 0);
+    color: rgb(255, 194, 81);
     font-size: 24px;
     font-weight: 500;
-    text-align: left;
     margin-bottom: 10px;
 }
 .work-experience-right .date,
 .education-left .date{
-    color:  rgb(0, 183, 255);
-    text-align: left;
+    color:  rgb(10, 156, 240);
+    margin-bottom: 5px;
 }
 
-.work-experience-right p,
-.education-left p{
-    text-align: left;
+.work-experience-right .info p,
+.education-left .info p{
     margin-bottom: 10px;
 }
 
-.education-left .university{
-    text-align: left;
+.work-experience .work-skills{
+    padding: 10px;
+    max-width: max-content;
+    background: rgb(150, 217, 255);
 }
 
 
