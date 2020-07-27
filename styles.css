@@ -174,10 +174,22 @@ body{
 /* CV section */
 
 .cv-sections{
-    text-align: center;
-    max-width: 1400px;
     position: relative;
     z-index: 1;
+    text-align: center;
+}
+
+.cv-section{
+    display: inline-block;
+    width: 70vw;
+    max-width: 1200px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+    .cv-section{
+        width: 80vw;
+    }
 }
 
 /* Summary Styles */
@@ -188,7 +200,6 @@ body{
 
 .summary-container{
     display: inline-block;
-    width: 70vw;
 }
 
 .summary .heading{
@@ -201,7 +212,7 @@ body{
 .summary .summary-img{
     grid-column: span 2;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     
 }
@@ -282,7 +293,9 @@ body{
     .summary-details p {
         text-align: center;
     }
-
+    .summary .summary-img{
+        justify-content: center;
+    }
     .summary-img img{
         width: 300px;
         height: 300px;
@@ -317,12 +330,10 @@ body{
 .work-experience,
 .education{
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .work-experience .work-experience-container ul,
 .education .education-container ul{
-    width: 80vw;
     display: inline-block
 }
 
@@ -383,13 +394,14 @@ if no 'space-between' then image will not be stay right if not enough text on le
 
 .projects{
     text-align: center;
-    margin-bottom: 50px;
+    
 }
 
 .project-container{
     display: inline-block;
     text-align: center;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .project-contents{
@@ -415,8 +427,7 @@ if no 'space-between' then image will not be stay right if not enough text on le
     background-position: center;
     background-size: cover;
     height: max-content;  /* max-conent works when padding is used for project-contents*/
-    width: 85vw;
-    max-width: 1300px;
+    width: 100%;
 }
 
 .project-contents a{
@@ -452,7 +463,6 @@ if no 'space-between' then image will not be stay right if not enough text on le
     background-color: rgba(0,0,0,0.7);
     padding: 20px;
     text-align: center;
-    max-width: 850px;
 }
 
 .project-info .list-wrapper{
@@ -525,7 +535,6 @@ if no 'space-between' then image will not be stay right if not enough text on le
     display: flex;
     align-items: center;
     justify-content: center;
-    
     margin: 20px;
 }
 
@@ -538,36 +547,25 @@ if no 'space-between' then image will not be stay right if not enough text on le
     margin-right: 10px;
 }
 
-/*  ----------------- */
-.project-split{
-    display: flex;
-}
-
-.project-left{
-    background-image: url("images/projects/audio.jpg");
-    float: left;
-    width: 50%;
-}
-
 
 /* Interests styles */
 .interests{
     text-align: center;
+    justify-content: center;
+    padding-bottom: 50px ;    
 }
 
 .interest{
-    text-align: center;
-}
-
-.interest-container{
-    margin: 50px;
+    display: inline-block;
+    padding-bottom: 100px;
+    
 }
 
 .interest-blurb{
     text-align: center;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .interest-blurb p{
@@ -577,14 +575,6 @@ if no 'space-between' then image will not be stay right if not enough text on le
 
 .interest-images{
     position: relative;
-}
-
-@media (min-width: 900px) {
-    .interest-images{
-        display: grid;
-        grid-auto-rows: auto;
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 .interest-images .interest-image-wrapper{
@@ -608,14 +598,6 @@ if no 'space-between' then image will not be stay right if not enough text on le
     position: relative;     
 }
 
-@media (min-width: 900px) {
-    .blog-post-container{
-        display: grid;
-        grid-auto-rows: auto;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 .blog-post-container .blog-post-wrapper{
     display: block;
     width: 100%;
@@ -633,6 +615,24 @@ if no 'space-between' then image will not be stay right if not enough text on le
 .blog-post-container .blog-post-wrapper a img:hover{
     filter: grayscale(0%);
 }
+
+/* Interest styles for narrowed screen */
+
+@media (min-width: 900px) {
+    .interest-images{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .blog-post-container{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
 
 /* Contact info styles */
 
