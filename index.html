@@ -11,7 +11,7 @@
             $('#header').load("navbar.html");
         });
     </script>
-    <link rel="icon" type="image/png" href="images/a.png">
+    <link rel="icon" type="image/png" href="images/ladybug.png">
 </head>
 <body>    
     <header id="header"></header>
@@ -29,6 +29,11 @@
         <div class="summary">
             <div class="summary-container">
                 <div class="summary-content">
+                    
+                    <div class="summary-img">
+                        <img src="images/profile.jpg" alt="profile_pic">
+                    </div>
+
                     <div class="summary-details">
                         <div class="heading">Details</div>
                         <p class="semi-bold">Name</p>
@@ -69,9 +74,6 @@
                             </ul>
                         </div>
                         
-                    </div>
-                    <div class="summary-img">
-                        <img src="images/profile.jpg" alt="profile_pic">
                     </div>
                     <div class="summary-about">
                         <div class="heading">About Me</div> 
@@ -176,42 +178,37 @@
                     <div class="project-contents">            
                         <div class="heading">How to make a camera hear</div>
 
-                        <div class="project-links">
-                            <a href="https://github.com/aoifemcdonagh/material-segmentation" target="_blank">                            
-                                <div class="project-info-link-wrapper">
-                                    <div class="project-info-link">  
-                                        <div class="icon">
-                                            <i class="fab fa-github"></i>
-                                        </div>                              
-                                        View the code on GitHub
+                        <div class="project-info">
+                            <p> <b>Research Question:</b> Can information about the acoustic environment be estimated using only an image sensor?</p>
+                            <p>Experienced audio engineers can accurately estimate room acoustic properties from images. Could a Machine Learning based approach perform similarly?</p>
+                        </div>
+
+                        <div class="project-link-container">
+                            <div class="project-links">
+                                <a href="https://github.com/aoifemcdonagh/material-segmentation" target="_blank">                            
+                                    <div class="project-info-link-wrapper">
+                                        <div class="project-info-link">  
+                                            <div class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </div>                              
+                                            View the code on GitHub
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="" target="_blank">
-                                <div class="project-info-link-wrapper">
-                                    <div class="project-info-link">
-                                        <div class="icon">
-                                            <i class="fas fa-graduation-cap"></i>
-                                        </div>                  
-                                        Read more in my thesis                                
-                                    </div> 
-                                </div>
-                            </a>
+                                </a>
+                                <a href="2020McDonaghMEngSc.pdf" target="_blank">
+                                    <div class="project-info-link-wrapper">
+                                        <div class="project-info-link">
+                                            <div class="icon">
+                                                <i class="fas fa-graduation-cap"></i>
+                                            </div>                  
+                                            Read more in my thesis                                
+                                        </div> 
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <ul>
-                    <li>
-                        <p>Can you gather information about the acoustic environment using only an image sensor?</p>
-                    </li>
-                    <li>
-                        <p>Audio engineers guess room acoustic properties from images based on prior experience</p>
-                    </li>
-                    <li>
-                        <p>Could a Machine Learning based approach perform similarly?</p>
-                    </li>
-                </ul>           
-
+                </div>               
             </div>
 
             <div class="project-container">
@@ -219,38 +216,46 @@
                     <div class="project-contents">                    
                         <div class="heading">Python Toolkit for Google's Audioset Dataset</div>                   
                         
-                        <div class="project-links">
-                            <a href="https://github.com/aoifemcdonagh/audioset-processing" target="_blank">
-                                <div class="project-info-link-wrapper">
-                                    <div class="project-info-link">  
-                                        <div class="icon">
-                                            <i class="fab fa-github"></i>
-                                        </div>                              
-                                        View the code on GitHub
+                        <div class="project-info-wrapper">
+                            <div class="project-info">
+                                <div class="list-wrapper">
+                                    <p>This toolkit provides the following functionalities:</p>
+                                    <ul>
+                                        <li>Downloading AudioSet data in raw audio format</li>
+                                        <li>Downloading of subsets of AudioSet</li>
+                                        <li>Sorting and searching of downloaded AudioSet data</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-link-container">
+                            <div class="project-links">
+                                <a href="https://github.com/aoifemcdonagh/audioset-processing" target="_blank">
+                                    <div class="project-info-link-wrapper">
+                                        <div class="project-info-link">  
+                                            <div class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </div>                              
+                                            View the code on GitHub
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a href="" target="_blank">
-                                <div class="project-info-link-wrapper">
-                                    <div class="project-info-link">
-                                        <div class="icon">
-                                            <i class="fas fa-graduation-cap"></i>
-                                        </div>                  
-                                        Read more in my thesis                                
-                                    </div> 
-                                </div>
-                            </a>
+                                </a>
+                                <a href="2020McDonaghMEngSc.pdf" target="_blank">
+                                    <div class="project-info-link-wrapper">
+                                        <div class="project-info-link">
+                                            <div class="icon">
+                                                <i class="fas fa-graduation-cap"></i>
+                                            </div>                  
+                                            Read more in my thesis                                
+                                        </div> 
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <ul>
-                    <li>
-                        <p>Do you need AudioSet data in raw audio format?</p>
-                    </li>
-                    <li>
-                        <p>Do you need subsets of Audioset rather than the entire dataset?</p>
-                    </li>
-                </ul>
+                
             </div>
 
             <div class="project-container">
@@ -258,43 +263,40 @@
                     <div class="project-contents">
                         <div class="heading">Creating novel game audio using GANs</div>                   
 
-                        <div class="project-links">                        
-                            <a href="https://ieeexplore.ieee.org/document/8516448" target="_blank">
-                                <div class="project-info-link-wrapper">
-                                    <div class="project-info-link">
-                                        <div class="icon">
-                                            <i class="far fa-newspaper"></i>
-                                        </div>                  
-                                        Read the conference paper                                          
+                        <div class="project-info">
+                            <p>High quality audio plays an important role in gaming, contributing significantly to player immersion. 
+                                In this paper a method of generating in-game audio using Generative Adversarial Networks is examined and compared to traditional methods of synthesizing and augmenting audio.
+                            </p>
+                        </div>
+
+                        <div class="project-link-container">
+                            <div class="project-links">                        
+                                <a href="https://ieeexplore.ieee.org/document/8516448" target="_blank">
+                                    <div class="project-info-link-wrapper">
+                                        <div class="project-info-link">
+                                            <div class="icon">
+                                                <i class="far fa-newspaper"></i>
+                                            </div>                  
+                                            Read the conference paper                                          
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                            
-                            <a href="" target="_blank">
-                                <div class="project-info-link-wrapper">
-                                    <div class="project-info-link">
-                                        <div class="icon">
-                                            <i class="fas fa-graduation-cap"></i>
-                                        </div>                  
-                                        Read more in my thesis                                
+                                </a>
+                                
+                                <a href="2020McDonaghMEngSc.pdf" target="_blank">
+                                    <div class="project-info-link-wrapper">
+                                        <div class="project-info-link">
+                                            <div class="icon">
+                                                <i class="fas fa-graduation-cap"></i>
+                                            </div>                  
+                                            Read more in my thesis                                
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <ul>
-                    <li>
-                        <p>
-                            High quality audio design contributes to a satisfying player experience in gaming via increased immersion.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            How can you produce audio for objects or environments which do not exist in real life?
-                        </p>
-                    </li>
-                </ul>
+                
             </div>
 
         </div>
@@ -456,70 +458,3 @@
    
 </body>
 </html>
-
- <!--
-    <div class="skills">
-        <div class="heading">Skills</div>
-
-        <div class="skills-container">
-            <ul>
-                <li>
-                    <div class="skill_name">
-                        Machine Learning
-                    </div>
-                    <div class="skill_progress">
-                        <span style="width: 80%;"></span>
-                    </div>
-                </li>
-                <li>                
-                    <div class="skill_name">
-                        Git
-                    </div>
-                    <div class="skill_progress">
-                        <span style="width: 90%;"></span>
-                    </div>
-                </li>
-                <li>                
-                    <div class="skill_name">
-                        Python
-                    </div>
-                    <div class="skill_progress">
-                        <span style="width: 70%;"></span>
-                    </div>
-                </li>
-                <li>                  
-                    <div class="skill_name">
-                        HTML & CSS
-                    </div>
-                    <div class="skill_progress">
-                        <span style="width: 50%;"></span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <p>Google's AudioSet is a large audio event class dataset, analogous to the <a href="http://www.image-net.org/" target="_blank">ImageNet</a> dataset for image classification.</p>
-                    <p>Problems with obtaining AudioSet data:</p>
-                    <ul>
-                        <li>
-                            <p>
-                                Not available in raw audio format (e.g. mp3)
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Cannot download subsets of entire dataset if required.
-                            </p>
-                        </li>
-                    </ul>
-                    <p>Solution:</p>
-                    <ul>
-                        <li>
-                            <p>Toolkit downloads raw audio format directly from YouTube</p>
-                        </li>
-                        <li>
-                            <p>Can download subsets of entire dataset if required</p>
-                        </li>
-                    </ul> 
-    -->
