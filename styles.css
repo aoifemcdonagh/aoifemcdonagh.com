@@ -584,7 +584,7 @@ if no 'space-between' then image will not be stay right if not enough text on le
 }
 
 .interest-images .interest-image-wrapper img{
-    width: 33%;
+    width: 100%;
     height: auto;
     filter: grayscale(100%);
     transition: filter 0.5s;  
