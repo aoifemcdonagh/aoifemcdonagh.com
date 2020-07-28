@@ -118,7 +118,7 @@ body{
 
 .hero-image{
     background-image: url("images/milkyway.jpeg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -584,8 +584,8 @@ if no 'space-between' then image will not be stay right if not enough text on le
 }
 
 .interest-images .interest-image-wrapper img{
-    width: 100%;
-    height: 100%;
+    width: 33%;
+    height: auto;
     filter: grayscale(100%);
     transition: filter 0.5s;  
     z-index: 1;
@@ -749,3 +749,14 @@ if no 'space-between' then image will not be stay right if not enough text on le
     transform: scale(1.2);
 }
 
+
+/* Blog page styles */
+
+.blog-hero-image{
+    background-image: url("images/lake.jpeg");
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
