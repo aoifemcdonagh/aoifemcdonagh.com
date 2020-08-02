@@ -1,0 +1,46 @@
+<div class="nav-wrapper" id="nav-wrapper">
+    <div class="nav-container" id="nav-container">
+        <div class="left-side">
+            <div class="nav-link-wrapper active-nav-link ">
+                <div class="navbar-item">
+                    <a href="/index.html" target="_top">About</a>
+                </div>
+            </div>
+            <div class="nav-link-wrapper active-nav-link ">
+                <div class="navbar-item">
+                    <a href="/blog/index.html" target="_top">Blog</a>
+                </div>
+            </div>
+            <!--
+            <div class="nav-link-wrapper active-nav-link">
+                <a href="contact.html" target="_top">Contact</a>
+            </div>
+            -->
+        </div>
+
+        <div class="nav-link-wrapper active-nav-link">
+            <a href="/index.html" target="_top">AOIFE MCDONAGH</a>
+        </div>
+    </div>
+</div>
+
+<!-- Javascript -->
+
+<!-- On scroll make the navbar shorter -->
+<script>
+    window.onscroll = function() {minimiseNavbar()};
+    
+    var navbar = document.getElementById("nav-wrapper"); 
+    
+    function minimiseNavbar() {
+      if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+        navbar.classList.add("sticky")
+        document.getElementById("nav-container").style.paddingTop = "15px";
+        document.getElementById("nav-container").style.paddingBottom = "15px";
+      } else {
+        navbar.classList.remove("sticky");
+        document.getElementById("nav-container").style.paddingTop = "30px";
+        document.getElementById("nav-container").style.paddingBottom = "30px";
+      }
+    }
+</script>
