@@ -44,7 +44,18 @@ body{
 }
 
 
-/* Navbar styles */
+/* Navbar styles 
+
+
+##    ##    ###    ##     ## ########     ###    ########  
+###   ##   ## ##   ##     ## ##     ##   ## ##   ##     ## 
+####  ##  ##   ##  ##     ## ##     ##  ##   ##  ##     ## 
+## ## ## ##     ## ##     ## ########  ##     ## ########  
+##  #### #########  ##   ##  ##     ## ######### ##   ##   
+##   ### ##     ##   ## ##   ##     ## ##     ## ##    ##  
+##    ## ##     ##    ###    ########  ##     ## ##     ## 
+
+*/
 
 .nav-wrapper {
     background: rgba(0,0,0,0.1);
@@ -114,7 +125,18 @@ body{
     margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Hero Image styles*/
+/* Hero Image styles
+
+
+##     ## ######## ########   #######  
+##     ## ##       ##     ## ##     ## 
+##     ## ##       ##     ## ##     ## 
+######### ######   ########  ##     ## 
+##     ## ##       ##   ##   ##     ## 
+##     ## ##       ##    ##  ##     ## 
+##     ## ######## ##     ##  #######  
+
+*/
 
 .hero-image{
     background-image: url("images/milkyway.jpeg");
@@ -171,7 +193,17 @@ body{
     background-size: cover;
 }
 
-/* CV section */
+/* CV section
+
+ ######  ##     ## 
+##    ## ##     ## 
+##       ##     ## 
+##       ##     ## 
+##        ##   ##  
+##    ##   ## ##   
+ ######     ###    
+ 
+ */
 
 .cv-sections{
     position: relative;
@@ -192,7 +224,17 @@ body{
     }
 }
 
-/* Summary Styles */
+/* Summary Styles 
+
+ ######  ##     ## ##     ## ##     ##    ###    ########  ##    ## 
+##    ## ##     ## ###   ### ###   ###   ## ##   ##     ##  ##  ##  
+##       ##     ## #### #### #### ####  ##   ##  ##     ##   ####   
+ ######  ##     ## ## ### ## ## ### ## ##     ## ########     ##    
+      ## ##     ## ##     ## ##     ## ######### ##   ##      ##    
+##    ## ##     ## ##     ## ##     ## ##     ## ##    ##     ##    
+ ######   #######  ##     ## ##     ## ##     ## ##     ##    ##   
+ 
+ */
 
 .summary {
     text-align: center;
@@ -325,7 +367,17 @@ body{
 }
 
 
-/* Work Experience & Education styles */
+/* Work Experience & Education styles 
+
+##      ##  #######  ########  ##    ##    ######## ########  ##     ## 
+##  ##  ## ##     ## ##     ## ##   ##     ##       ##     ## ##     ## 
+##  ##  ## ##     ## ##     ## ##  ##      ##       ##     ## ##     ## 
+##  ##  ## ##     ## ########  #####       ######   ##     ## ##     ## 
+##  ##  ## ##     ## ##   ##   ##  ##      ##       ##     ## ##     ## 
+##  ##  ## ##     ## ##    ##  ##   ##     ##       ##     ## ##     ## 
+ ###  ###   #######  ##     ## ##    ##    ######## ########   #######  
+ 
+ */
 
 .work-experience,
 .education{
@@ -390,7 +442,17 @@ if no 'space-between' then image will not be stay right if not enough text on le
 }
 
 
-/* Project styles */ 
+/* Project styles
+
+########  ########   #######        ## ########  ######  ########  ######  
+##     ## ##     ## ##     ##       ## ##       ##    ##    ##    ##    ## 
+##     ## ##     ## ##     ##       ## ##       ##          ##    ##       
+########  ########  ##     ##       ## ######   ##          ##     ######  
+##        ##   ##   ##     ## ##    ## ##       ##          ##          ## 
+##        ##    ##  ##     ## ##    ## ##       ##    ##    ##    ##    ## 
+##        ##     ##  #######   ######  ########  ######     ##     ######  
+
+*/ 
 
 .projects{
     text-align: center;
@@ -548,7 +610,17 @@ if no 'space-between' then image will not be stay right if not enough text on le
 }
 
 
-/* Interests styles */
+/* Interests styles
+
+#### ##    ## ######## ######## ########  ########  ######  ########  ######  
+ ##  ###   ##    ##    ##       ##     ## ##       ##    ##    ##    ##    ## 
+ ##  ####  ##    ##    ##       ##     ## ##       ##          ##    ##       
+ ##  ## ## ##    ##    ######   ########  ######    ######     ##     ######  
+ ##  ##  ####    ##    ##       ##   ##   ##             ##    ##          ## 
+ ##  ##   ###    ##    ##       ##    ##  ##       ##    ##    ##    ##    ## 
+#### ##    ##    ##    ######## ##     ## ########  ######     ##     ######  
+
+*/
 .interests{
     text-align: center;
     justify-content: center;
@@ -634,16 +706,26 @@ if no 'space-between' then image will not be stay right if not enough text on le
 
 
 
-/* Contact info styles */
+/* Footer / Contact info styles 
 
-.contact{  
+########  #######   #######  ######## ######## ########  
+##       ##     ## ##     ##    ##    ##       ##     ## 
+##       ##     ## ##     ##    ##    ##       ##     ## 
+######   ##     ## ##     ##    ##    ######   ########  
+##       ##     ## ##     ##    ##    ##       ##   ##   
+##       ##     ## ##     ##    ##    ##       ##    ##  
+##        #######   #######     ##    ######## ##     ## 
+
+*/
+
+.footer{  
     color: white;
     background: grey;
     padding: 50px;
     text-align: center;
 }
 
-.contact .heading{
+.footer .heading{
     color: white;
     font-size: 40px;
     text-align: center;
@@ -694,14 +776,14 @@ if no 'space-between' then image will not be stay right if not enough text on le
     margin: 10px;
 }
 
-.contact .contact-info ul{
+.footer .contact-info ul{
     display: flex;
     justify-content: space-between;
     text-align: center;
     position: relative;
 }
 
-.contact .contact-info .icon{
+.footer .contact-info .icon{
     margin: 10px;
     display: inline-table;
     width: 50px;
@@ -712,7 +794,7 @@ if no 'space-between' then image will not be stay right if not enough text on le
     font-size: 25px;
 }
 
-.contact .contact-info i{
+.footer .contact-info i{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -720,22 +802,22 @@ if no 'space-between' then image will not be stay right if not enough text on le
 
 /* Link styles */
 
-.contact .contact-info ul li a{
+.footer .contact-info ul li a{
     color: white;
     text-decoration: none;
     transition: color 0.5s;
 }
 
-.contact .contact-info ul li a .icon{
+.footer .contact-info ul li a .icon{
     background: white;
     transition: background 0.5s;
 }
 
-.contact .contact-info ul li a:hover{
+.footer .contact-info ul li a:hover{
     color: black; 
 }
 
-.contact .contact-info ul li a:hover .icon{
+.footer .contact-info ul li a:hover .icon{
     background: black;
 }
 
