@@ -69,6 +69,8 @@ body{
 .nav-container{
     display: flex;
     justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
     padding: 30px;
     transition: padding 0.5s;
 }
@@ -77,12 +79,12 @@ body{
     background: rgba(0,0,0,0.8);
 }
 
-.left-side {
+.right-side {
     display: flex;
 }
 
-.nav-wrapper .nav-container .left-side > div{
-    margin-right: 20px;
+.nav-wrapper .nav-container .right-side > div{
+    margin-right: 40px;
     text-transform: uppercase;
 }
 
@@ -90,6 +92,7 @@ body{
     height: 22px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
+    
 }
 
 .nav-link-wrapper a {
@@ -111,7 +114,6 @@ body{
 }
 
 .nav-wrapper .nav-container .right-side a {
-    margin-right: 20px;
     text-transform: uppercase;
     color: white;
 }
@@ -140,7 +142,7 @@ body{
 
 .hero-image{
     background-image: url("images/milkyway.jpeg");
-    background-position: top;
+    background-position-y: -100px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -835,7 +837,7 @@ if no 'space-between' then image will not be stay right if not enough text on le
 /* Blog page styles */
 
 .blog-hero-image{
-    background-image: url("images/lake.jpeg");
+    background-image: url("/images/lake.jpeg");
     background-position-y: -100px;
     background-repeat: no-repeat;
     background-size: cover;
