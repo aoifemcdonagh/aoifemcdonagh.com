@@ -733,41 +733,25 @@ if no 'space-between' then image will not be stay right if not enough text on le
     text-align: center;
 }
 
-.column{
-    float: left;
-    width: 50%;
-    padding: 10px;
-    text-align: center;
-}
-
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 900px) {
-    .column {
-      width: 100%;
-    }
-}
-
-.row{
+.contact-info-container{
+    display: inline-block;
+    width: 70vw;
+    max-width: 750px;
     margin: 20px;
 }
 
-.contact-info{
-    display: inline-block;  /* paired with 'text-align: center' in .contact */
+.contact-emails{
+    grid-column: span 1;
 }
 
-.emails{
-    text-align: center;
+.contact-social{
+    grid-column: span 1;
 }
 
 .email-address{
     display: inline-block;  /* paired with 'text-align: center' in .column */
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     flex-direction: column;
     font-size: 18px;
@@ -801,6 +785,23 @@ if no 'space-between' then image will not be stay right if not enough text on le
     vertical-align: middle;
     text-align: center;
 }
+
+/* Grid until minimum width */
+@media (min-width: 900px) {
+    .contact-info{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media (max-width: 900px){
+    .email-address{
+        align-items: center;
+    }
+}
+
+
 
 /* Link styles */
 
