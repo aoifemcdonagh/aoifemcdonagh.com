@@ -244,6 +244,7 @@ body{
 
 .summary-container{
     display: inline-block;
+    max-width: 1000px;
 }
 
 .summary .heading{
