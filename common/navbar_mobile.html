@@ -1,0 +1,28 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<i id="burger" class="material-icons" onclick="burger()">menu</i>
+<i id="quit" class="material-icons" onclick="quit()">clear</i>
+
+<div id="links">
+    <a href="/index.html" target="_top">About</a>
+    <a href="/blog/index.html" target="_top">Blog</a>
+</div>
+
+<script>
+    function burger(){
+        var burger = document.getElementById('burger');
+        var links = document.getElementById('links');
+        var quit = document.getElementById('quit');
+        burger.style.padding = '16px 16px 200vw 200vw';
+        links.style.display = 'flex';
+        quit.style.display = 'inline';
+    }
+
+    function quit(){
+        var burger = document.getElementById('burger');
+        var links = document.getElementById('links');
+        var quit = document.getElementById('quit');
+        burger.style.padding = '16px 16px 32px 32px';
+        links.style.display = 'none';
+        quit.style.display = 'none';
+    }
+</script>
