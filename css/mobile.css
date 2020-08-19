@@ -179,12 +179,12 @@ body{
 
 .hero-content{
     text-align: center;
-    top: 50%;
-    left: 50%;
+    
 }
 
 .hero-text{
     color: white;
+    display: inline-block;
 }
 
 .hero-text .hero-subtitle{
@@ -203,7 +203,7 @@ body{
 /* Hero styles for mobile */
 @media screen and (max-device-width: 640px) and (max-width: 640px){
     .hero-image{
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         background-image: url("/images/milkyway_portrait.jpeg");
         background-size: contain;
         background-repeat: no-repeat;
@@ -212,13 +212,14 @@ body{
         padding-bottom: 133%;
     }
     .hero-content{
-        display: flex;
+        width: 100%;
+        height: 0;
+        padding-top: 75%;
+        text-align: right;
         
     }
     .hero-text{
-        text-align: right;
-        padding-right: 20px;
-        padding-top: 200px;
+        margin-right: 15px;
     }
     .hero-text .hero-title{
         font-weight: 700;
@@ -728,8 +729,6 @@ body{
 
 .interest{
     display: inline-block;
-    padding-bottom: 100px;
-    
 }
 
 .interest-blurb{
@@ -803,6 +802,9 @@ body{
 
 /* styles for mobile */
 @media screen and (max-device-width: 640px){
+    .interest{
+        padding-bottom: 50px;
+    }
     .interest-blurb{
         margin-left: 20px;
         margin-right: 20px;
@@ -811,6 +813,9 @@ body{
 
 /* styles for desktop */
 @media screen and (min-device-width: 640px){
+    .interest{
+        padding-bottom: 100px;
+    }
     .interest-blurb{
         margin-left: 100px;
         margin-right: 100px;
@@ -962,9 +967,25 @@ body{
 
 .blog-hero-image{
     background-image: url("/images/lake.jpeg");
-    background-position-y: -100px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     
+}
+
+@media screen and (max-device-width: 640px) and (max-width: 640px){
+    .blog-hero-image .hero-content{
+        display: flex;
+        
+    }
+    .blog-hero-image .hero-text{
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+    .blog-hero-image .hero-text .hero-title{
+        font-weight: 700;
+        font-size: 2.5em;
+        line-height: 1.5em;
+        color: white;
+    }
 }
