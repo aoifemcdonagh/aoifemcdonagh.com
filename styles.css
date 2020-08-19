@@ -755,34 +755,19 @@ body{
 .interest-images .interest-image-wrapper img{
     width: 100%;
     height: auto;
-    filter: grayscale(100%);
-    transition: filter 0.5s;  
     z-index: 1;
     position: relative;  
-}
-
-.interest-images .interest-image-wrapper img:hover{
-    filter: grayscale(0%);
-    z-index: 1;
-    position: relative;     
 }
 
 .blog-post-container .blog-post-wrapper{
     display: block;
     width: 100%;
     height: 100%;
-
 }
 
 .blog-post-container .blog-post-wrapper a img{
     width: 100%;
     height: auto;
-    filter: grayscale(100%);
-    transition: filter 0.5s;
-}
-
-.blog-post-container .blog-post-wrapper a img:hover{
-    filter: grayscale(0%);
 }
 
 /* Interest styles for narrowed screen */
@@ -820,6 +805,22 @@ body{
     .interest-blurb{
         margin-left: 100px;
         margin-right: 100px;
+    }
+    .interest-images .interest-image-wrapper img{
+        filter: grayscale(100%);
+        transition: filter 0.5s;  
+    }
+    .interest-images .interest-image-wrapper img:hover{
+        filter: grayscale(0%);
+        z-index: 1;
+        position: relative;     
+    }
+    .blog-post-container .blog-post-wrapper a img{
+        filter: grayscale(100%);
+        transition: filter 0.5s;
+    }
+    .blog-post-container .blog-post-wrapper a img:hover{
+        filter: grayscale(0%);
     }
 }
 
