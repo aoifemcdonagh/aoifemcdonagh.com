@@ -44,8 +44,7 @@ body{
 }
 
 
-/* Navbar styles 
-
+/*
 
 ##    ##    ###    ##     ## ########     ###    ########  
 ###   ##   ## ##   ##     ## ##     ##   ## ##   ##     ## 
@@ -57,75 +56,101 @@ body{
 
 */
 
-.nav-wrapper {
-    background: rgba(0,0,0,0.1);
-    transition: background 0.5s;
-    transition:  0.5s;
-    z-index: 2;
-    position: fixed;  /* Using fixed so that hero image is seen under non-opaque navbar */
-    width: 100%;
-}
-
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 30px;
-    transition: padding 0.5s;
-}
-
-.nav-wrapper:hover{
-    background: rgba(0,0,0,0.8);
-}
-
-.right-side {
-    display: flex;
-}
-
-.nav-wrapper .nav-container .right-side > div{
-    margin-right: 40px;
-    text-transform: uppercase;
-}
-
-.nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+/* Navbar styles for mobile */
+@media screen and (max-device-width: 640px){
+    #burger{
+        position: fixed;
+        right: 0;
+        top: 0;
+        color: white;
+        background: linear-gradient(45deg, #9682C8 10%, #05BCC9);;
+        font-size: 32px;
+        padding: 16px 16px 32px 32px;
+        border-radius: 0% 0% 0% 100%;
+        transition: 1s;
+        cursor: pointer;
+        z-index: 10;
+    }
+      
+    #quit{
+        position: fixed;
+        top: 0;
+        color: white;
+        font-size: 32px;
+        padding: 16px;
+        display: none;
+        cursor: pointer;
+        z-index: 11;
+    }
+    #links{
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 50vh;
+        padding: 25vh 0;
+        z-index: 10;
+    }
     
+    #links a{
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        padding-bottom: 30px;
+        font-size: 2em;
+        z-index: 10;
+    }
 }
 
-.nav-link-wrapper a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.5s;
+/* Navbar styles for desktop */
+@media screen and (min-device-width: 640px){
+    .nav-wrapper {
+        background: rgba(0,0,0,0.1);
+        z-index: 2;
+        position: fixed;  /* Using fixed so that hero image is seen under non-opaque navbar */
+        width: 100%;
+        transition: background 0.5s;
+        transition:  0.5s;
+    }
+    
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        transition: padding 0.5s;
+    }
+    .nav-wrapper:hover{
+        background: rgba(0,0,0,0.8);
+    }
+    .nav-container{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .nav-container .right-side ul{
+        display: flex;
+    }
+    .nav-container .navbar-item{
+        color: white;
+        border: none;
+        outline: none;
+        background-color: inherit;
+        margin-right: 20px;
+        height: 22px;
+        margin-right: 40px;
+        text-transform: uppercase;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+    }
+    .nav-container .navbar-item:hover{
+        border-bottom: 1px solid white;
+    }
+    .nav-container .navbar-item a{
+        color: white;
+        text-decoration: none;
+    }
 }
 
-.nav-link-wrapper:hover {
-    border-bottom: 1px solid white;
-
-}
-.nav-link-wrapper a:hover {
-    color: white;  
-}
-
-.active-nav-link a {
-    color: white;
-}
-
-.nav-wrapper .nav-container .right-side a {
-    text-transform: uppercase;
-    color: white;
-}
-
-.nav-wrapper .nav-container .nav-item{
-    color: white;
-    border: none;
-    outline: none;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-}
 
 /* Hero Image styles
 
@@ -141,15 +166,7 @@ body{
 */
 
 .hero-image{
-    background-image: url("images/milkyway.jpeg");
-    background-position-y: -100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    animation: fadeInAnimation ease 3s; 
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
-    margin-bottom: 100px;
+    
 }
 
 @keyframes fadeInAnimation { 
@@ -163,23 +180,12 @@ body{
 
 .hero-content{
     text-align: center;
-    top: 50%;
-    left: 50%;
     
 }
 
 .hero-text{
-    text-align: center;
-    justify-content: center;
-    position: relative;
-    padding: 20% 25px;
     color: white;
-}
-
-.hero-text .hero-title{
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 75px;
+    display: inline-block;
 }
 
 .hero-text .hero-subtitle{
@@ -195,6 +201,61 @@ body{
     background-size: cover;
 }
 
+/* Hero styles for mobile */
+@media screen and (max-device-width: 640px) and (max-width: 640px){
+    .hero-image{
+        margin-bottom: 30px;
+        background-image: url("/images/milkyway_portrait.jpeg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-bottom: 133%;
+    }
+    .hero-content{
+        width: 100%;
+        height: 0;
+        padding-top: 75%;
+        text-align: right;
+        
+    }
+    .hero-text{
+        margin-right: 15px;
+    }
+    .hero-text .hero-title{
+        font-weight: 700;
+        font-size: 3em;
+        line-height: 1.5em;
+        color: white;
+    }
+}
+
+/* Hero styles for desktop */
+@media screen and (min-device-width: 640px) and (min-width: 640px) {
+    .hero-image{
+        background-size: cover;
+        position: relative;
+        background-image: url("/images/milkyway.jpeg");
+        background-position-y: -100px;
+        margin-bottom: 50px;
+        animation: fadeInAnimation ease 3s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards; 
+        margin-bottom: 100px;
+    }
+    .hero-text{
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        padding: 20% 25px;
+    }
+    .hero-text .hero-title{
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 75px;
+    }
+}
+
 /* CV section
 
  ######  ##     ## 
@@ -208,21 +269,27 @@ body{
  */
 
 .cv-sections{
-    position: relative;
     z-index: 1;
     text-align: center;
 }
 
 .cv-section{
-    display: inline-block;
-    width: 70vw;
     max-width: 1200px;
-    margin-bottom: 50px;
 }
 
-@media (max-width: 1000px) {
+/* styles for mobile */
+@media screen and (max-device-width: 640px) and (max-width: 640px){
     .cv-section{
+        margin-bottom: 10px;
+    }
+}
+
+/* styles for desktop */
+@media screen and (min-device-width: 640px) and (min-width: 640px){
+    .cv-section{
+        display: inline-block;
         width: 80vw;
+        margin-bottom: 50px;
     }
 }
 
@@ -317,6 +384,7 @@ body{
     position: relative;
 }
 
+/*
 .summary-about ul li:before{
     content: "";
     position: absolute;
@@ -330,6 +398,7 @@ body{
     opacity: 1;
     z-index: 1;
 }
+*/
 
 /* Summary styles for narrow page */
 
@@ -369,6 +438,16 @@ body{
     }
 }
 
+/* styles for mobile */
+@media screen and (max-device-width: 640px){
+
+}
+
+/* styles for desktop */
+@media screen and (min-device-width: 640px){
+
+}
+
 
 /* Work Experience & Education styles 
 
@@ -387,37 +466,24 @@ body{
     text-align: center;
 }
 
-.work-experience .work-experience-container ul,
-.education .education-container ul{
-    display: inline-block
+.work-experience-right,
+.education-left{
+    grid-column: span 3;
+    padding: 30px;
+    text-align: left;
 }
 
-.work-experience .work-experience-container ul li{
-    display: flex;
-    margin: 10px;
-}
-
-/* Need to add 'justify-content: space-between;' to list items in this class
-The image is on the right and text on left side is algned left
-if no 'space-between' then image will not be stay right if not enough text on left to keep it there*/
-.education .education-container ul li{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
+.work-experience-left,
+.education-right{
+    grid-column: span 2;
 }
 
 .work-experience-left img,
 .education-right img{
-    height: 250px;
-    width: 250px;
+    max-height: 250px;
+    max-width: 250px;
     border-radius: 10%;
     margin: 10px;
-}
-
-.work-experience-right,
-.education-left{
-    padding: 30px;
-    text-align: left;
 }
 
 .job-title,
@@ -442,6 +508,29 @@ if no 'space-between' then image will not be stay right if not enough text on le
     padding: 10px;
     max-width: max-content;
     background: rgb(150, 217, 255);
+}
+
+/* styles for mobile */
+@media screen and (max-device-width: 750px) and (max-width: 750px) {
+    .work-experience-left,
+    .education-right{
+        justify-content: center;
+    }
+    .work-experience-right,
+    .education-left{
+        justify-content: center;
+    }
+}
+
+/* styles for desktop */
+@media screen and (min-device-width: 750px) and (min-width: 750px) {
+    .work-experience-container,
+    .education ul li{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
 }
 
 
@@ -502,18 +591,18 @@ if no 'space-between' then image will not be stay right if not enough text on le
 
 .projects .project1{
     display: inline-block;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("images/projects/vs.jpg");
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("/images/projects/vs.jpg");
 
 }
 
 .projects .project2{
     display: inline-block;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("images/projects/audio.jpg");
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url("/images/projects/audio.jpg");
 }
 
 .projects .project3{
     display: inline-block;
-    background-image: url("images/projects/gaming.jpg");
+    background-image: url("/images/projects/gaming.jpg");
 }
 
 /* ------------------------------- */
@@ -573,15 +662,14 @@ if no 'space-between' then image will not be stay right if not enough text on le
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    max-width: 850px;
+    max-width: 900px;
 }
 
 .project-info-link-wrapper{
     display: inline-block;  /* replace 'none' with 'inline-block' when suitable link ready */
     color: white;
     font-size: 25px;
-    width: max-content;
-    height: max-content;
+    
     background: rgba(0,0,0,0.7);
     transition: background 0.2s;
     transition: font-size 0.2s;
@@ -612,6 +700,16 @@ if no 'space-between' then image will not be stay right if not enough text on le
     margin-right: 10px;
 }
 
+/* styles for mobile */
+@media screen and (max-device-width: 640px){
+
+}
+
+/* styles for desktop */
+@media screen and (min-device-width: 640px){
+    
+}
+
 
 /* Interests styles
 
@@ -632,14 +730,10 @@ if no 'space-between' then image will not be stay right if not enough text on le
 
 .interest{
     display: inline-block;
-    padding-bottom: 100px;
-    
 }
 
 .interest-blurb{
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
     margin-bottom: 20px;
 }
 
@@ -707,6 +801,28 @@ if no 'space-between' then image will not be stay right if not enough text on le
     }
 }
 
+/* styles for mobile */
+@media screen and (max-device-width: 640px){
+    .interest{
+        padding-bottom: 50px;
+    }
+    .interest-blurb{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* styles for desktop */
+@media screen and (min-device-width: 640px){
+    .interest{
+        padding-bottom: 100px;
+    }
+    .interest-blurb{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
 
 
 /* Footer / Contact info styles 
@@ -736,9 +852,9 @@ if no 'space-between' then image will not be stay right if not enough text on le
 
 .contact-info-container{
     display: inline-block;
+    margin-top: 20px;
     width: 70vw;
     max-width: 750px;
-    margin: 20px;
 }
 
 .contact-emails{
@@ -802,6 +918,18 @@ if no 'space-between' then image will not be stay right if not enough text on le
     }
 }
 
+/* styles for mobile */
+@media screen and (max-device-width: 640px){
+
+}
+
+/* styles for desktop */
+@media screen and (min-device-width: 640px){
+    .contact-info-container{
+        
+    }
+}
+
 
 
 /* Link styles */
@@ -840,9 +968,64 @@ if no 'space-between' then image will not be stay right if not enough text on le
 
 .blog-hero-image{
     background-image: url("/images/lake.jpeg");
-    background-position-y: -100px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     
+}
+
+.blog-hero-content{
+    text-align: center;
+}
+
+.blog-hero-text{
+    
+    color: white;
+    
+}
+
+.blog-hero-text .blog-hero-subtitle{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* styles for mobile */
+@media screen and (max-device-width: 640px) and (max-width: 640px){
+    .blog-hero-content{
+        display: flex;
+        
+    }
+    .blog-hero-text{
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+    .blog-hero-text .blog-hero-title{
+        font-weight: 700;
+        font-size: 2.5em;
+        line-height: 1.5em;
+        color: white;
+    }
+}
+
+/* styles for desktop */
+@media screen and (min-device-width: 640px) and (min-width: 640px) {
+    .blog-hero-image{
+        background-size: cover;
+        position: relative;
+        background-position-y: -100px;
+        animation: fadeInAnimation ease 3s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards; 
+    }
+    .blog-hero-text{
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        padding: 20% 25px;
+    }
+    .blog-hero-text .blog-hero-title{
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 75px;
+    }
 }
