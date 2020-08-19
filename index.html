@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>Aoife McDonagh</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/mobile.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/16bfceb894.js" crossorigin="anonymous"></script>
     <script src="js/jquery.js"></script>
-    <link rel="icon" type="image/png" href="images/ladybug.png">
+    <link rel="icon" type="image/png" href="/images/ladybug.png">
 </head>
 <body>    
     <header id="header"></header>
     <div class="hero-image">
-        
         <div class="hero-content">
             <div class="hero-text">
                 <div class="hero-title">Aoife McDonagh</div>
@@ -73,24 +73,26 @@
                     </div>
                     <div class="summary-about">
                         <div class="heading">About Me</div> 
-                        <ul>
-                            <li>
-                                <p>Enthusiastic engineer focused on machine learning projects.</p>
-                            </li>
-                            <li>
-                                <p>
-                                    Conducted masters thesis on audio synthesis and room acoustic analysis using deep learning methods.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Independent learner and eager to apply technical skills to new areas.
-                                </p>
-                            </li>
-                            <li>
-                                <p>Comfortable in both research and software development environments.</p>
-                            </li>
-                        </ul>                   
+                        <div class="about-list-wrapper">
+                            <ul>
+                                <li>
+                                    <p>🐞 Enthusiastic engineer focused on machine learning projects.</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        🐞 Conducted masters thesis on audio synthesis and room acoustic analysis using deep learning methods.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        🐞 Independent learner and eager to apply technical skills to new areas.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>🐞 Comfortable in both research and software development environments.</p>
+                                </li>
+                            </ul>  
+                        </div>                 
                     </div>
                 </div>
             </div>
@@ -101,76 +103,80 @@
         <div class="work-experience cv-section">
             <div class="section-heading">Where I've Worked</div>
 
-            <div class="work-experience-container">
                 <ul>
                     <li>
-                        <div class="work-experience-left zoom-img">
-                            <img src="images/work_experience/xperi.jpg" alt="">
-                        </div>
-                        <div class="work-experience-right">
-                            <div class="job-title">R&D Engineer, <b>Xperi</b></div>
-                            <div class="date semi-bold">September 2017 - December 2019</div>
-                            <div class="info">
-                                    <p>
-                                        Conducted research in the field deep learning with applications to audio processing. 
-                                        Resulted in filing of two provisional patent applications.
-                                    </p>
-                                    <p>
-                                        Developed Python toolkit for managing and processing large (1TB+) audio database. 
-                                        Shorted data acquisition process from several weeks to 2-3 days. 
-                                    </p>                                
+                        <div class="work-experience-container">
+                            <div class="work-experience-left zoom-img">
+                                <img src="/images/work_experience/xperi.jpg" alt="">
                             </div>
-                            <div class="work-skills">
-                                <div class="semi-bold">Skills</div>
-                                <p>Tensorflow, Deep Neural Networks, Audio Processing, Image Processing, Python, Linux OS, OpenCV</p>
+                            <div class="work-experience-right">
+                                <div class="job-title">R&D Engineer, <b>Xperi</b></div>
+                                <div class="date semi-bold">September 2017 - December 2019</div>
+                                <div class="info">
+                                        <p>
+                                            Conducted research in the field deep learning with applications to audio processing. 
+                                            Resulted in filing of two provisional patent applications.
+                                        </p>
+                                        <p>
+                                            Developed Python toolkit for managing and processing large (1TB+) audio database. 
+                                            Shorted data acquisition process from several weeks to 2-3 days. 
+                                        </p>                                
+                                </div>
+                                <div class="work-skills">
+                                    <div class="semi-bold">Skills</div>
+                                    <p>Tensorflow, Deep Neural Networks, Audio Processing, Image Processing, Python, Linux OS, OpenCV</p>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="work-experience-left zoom-img">
-                            <img src="images/work_experience/intel1.jpg" alt="">
-                        </div>
-                        <div class="work-experience-right">
-                            <div class="job-title">BIOS Engineering Intern, <b>Intel</b></div>
-                            <div class="date semi-bold">January - August 2016</div>
-                            <div class="info">
-                                <p>Imrovement and maintenance of BIOS firmware test platform.</p>
-                                <p>Training new employees and contract workers on functionalities of BIOS test platform.</p>
-                                <p>Captain of intern group project designing wearable devices.</p>                            
+                        <div class="work-experience-container">
+                            <div class="work-experience-left zoom-img">
+                                <img src="/images/work_experience/intel1.jpg" alt="">
                             </div>
-                            <div class="work-skills">
-                                <div class="semi-bold">Skills</div>
-                                <p>BIOS development, Python, Perl, YAML, Shell Scripting, Linux OS, Hardware Maintenance, Wearable Devices</p>
+                            <div class="work-experience-right">
+                                <div class="job-title">BIOS Engineering Intern, <b>Intel</b></div>
+                                <div class="date semi-bold">January - August 2016</div>
+                                <div class="info">
+                                    <p>Imrovement and maintenance of BIOS firmware test platform.</p>
+                                    <p>Training new employees and contract workers on functionalities of BIOS test platform.</p>
+                                    <p>Captain of intern group project designing wearable devices.</p>                            
+                                </div>
+                                <div class="work-skills">
+                                    <div class="semi-bold">Skills</div>
+                                    <p>BIOS development, Python, Perl, YAML, Shell Scripting, Linux OS, Hardware Maintenance, Wearable Devices</p>
+                                </div>
                             </div>
                         </div>
-                        
                     </li>
                     <li>
-                        <div class="work-experience-left zoom-img">
-                            <img src="images/work_experience/intel2.jpg" alt="">
-                        </div>
-                        <div class="work-experience-right">
-                            <div class="job-title">Software Engineering Intern, <b>Intel</b></div>
-                            <div class="date semi-bold">June - August 2015</div>
-                            <div class="info">
-                                <p>Writing customer ‘How-To’ guide for FreeRADIUS open-source authentication server.</p>
-                                <p>Creation of web UI for intern group project designing IoT devices.</p>
+                        <div class="work-experience-container">
+                            <div class="work-experience-left zoom-img">
+                                <img src="/images/work_experience/intel2.jpg" alt="">
                             </div>
-                            <div class="work-skills">
-                                <div class="semi-bold">Skills</div>
-                                <p>Linux OS, Authentication Servers, HTML, CSS, Internet of Things</p>
+                            <div class="work-experience-right">
+                                <div class="job-title">Software Engineering Intern, <b>Intel</b></div>
+                                <div class="date semi-bold">June - August 2015</div>
+                                <div class="info">
+                                    <p>Writing customer ‘How-To’ guide for FreeRADIUS open-source authentication server.</p>
+                                    <p>Creation of web UI for intern group project designing IoT devices.</p>
+                                </div>
+                                <div class="work-skills">
+                                    <div class="semi-bold">Skills</div>
+                                    <p>Linux OS, Authentication Servers, HTML, CSS, Internet of Things</p>
+                                </div>
                             </div>
                         </div>
                     </li>
                 </ul>
-            </div>
+            
         </div>
 
         <div class="projects cv-section">
             <div class="section-heading">Academic projects</div>
             
             <div class="project-container">
-                <div class="project1 project-image-background parallax">
+                <div class="project1 project-image-background ">
                     <div class="project-contents">            
                         <div class="heading">How to make a camera hear</div>
 
@@ -208,7 +214,7 @@
             </div>
 
             <div class="project-container">
-                <div class="project2 project-image-background parallax">
+                <div class="project2 project-image-background ">
                     <div class="project-contents">                    
                         <div class="heading">Python Toolkit for Google's Audioset Dataset</div>                   
                         
@@ -255,7 +261,7 @@
             </div>
 
             <div class="project-container">
-                <div class="project3 project-image-background parallax">
+                <div class="project3 project-image-background ">
                     <div class="project-contents">
                         <div class="heading">Creating novel game audio using GANs</div>                   
 
@@ -317,7 +323,7 @@
                             </div>
                         </div>
                         <div class="education-right zoom-img">
-                            <img src="images/education/masters.jpg" alt="">
+                            <img src="/images/education/masters.jpg" alt="">
                         </div>
                     </li>
                     <li>
@@ -334,7 +340,7 @@
                             </div>
                         </div>
                         <div class="education-right zoom-img">
-                            <img src="images/education/bachelors.jpg" alt="">
+                            <img src="/images/education/bachelors.jpg" alt="">
                         </div>
                     </li>
                 </ul>
@@ -355,15 +361,15 @@
 
                     <div class="interest-images">
                         <div class="interest-image-wrapper">
-                            <img src="images/interests/lesson1.JPG" alt="">
+                            <img src="/images/interests/lesson1.JPG" alt="">
                             <p>Galway Airport</p>
                         </div>
                         <div class="interest-image-wrapper">
-                            <img src="images/interests/longbeach.JPG" alt="">
+                            <img src="/images/interests/longbeach.JPG" alt="">
                             <p>Long Beach, California</p>
                         </div>
                         <div class="interest-image-wrapper">
-                            <img src="images/interests/ei2-edit.jpg" alt="">
+                            <img src="/images/interests/ei2-edit.jpg" alt="">
                             <p>Dublin Airport</p>
                         </div>
                     </div>
@@ -379,15 +385,15 @@
 
                     <div class="interest-images">                        
                         <div class="interest-image-wrapper">
-                            <img src="images/interests/GOPR0218.png" alt="">
+                            <img src="/images/interests/GOPR0218.png" alt="">
                             <p>Tauhara, Taupo, New Zealand</p>
                         </div>
                         <div class="interest-image-wrapper">
-                            <img src="images/interests/swim.jpg" alt="">
+                            <img src="/images/interests/swim.jpg" alt="">
                             <p>Rangatira Point, Taupo, New Zealand</p>
                         </div>
                         <div class="interest-image-wrapper">
-                            <img src="images/interests/IMG_5555.png" alt="">
+                            <img src="/images/interests/IMG_5555.png" alt="">
                             <p>Diamond Hill, Co. Galway</p>
                         </div>
                     </div>
@@ -413,15 +419,15 @@
                     </div>
                     <div class="interest-images">
                         <div class="interest-image-wrapper">
-                            <img src="images/milkyway.jpeg" alt="">
+                            <img src="/images/milkyway.jpeg" alt="">
                             <p>Taupo, New Zealand</p>
                         </div>
                         <div class="interest-image-wrapper">
-                            <img src="images/interests/noclucent_clouds.jpg" alt="">
+                            <img src="/images/interests/noclucent_clouds.jpg" alt="">
                             <p>Mullingar, Co. Westmeath</p>
                         </div>
                         <div class="interest-image-wrapper">
-                            <img src="images/interests/sunset-nz.jpg" alt="">
+                            <img src="/images/interests/sunset-nz.jpg" alt="">
                             <p>Two Mile Bay, Taupo, New Zealand</p>
                         </div>
                     </div>
