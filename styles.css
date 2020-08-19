@@ -854,6 +854,7 @@ body{
 .contact-info-container{
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 70vw;
     max-width: 750px;
 }
@@ -904,6 +905,11 @@ body{
     text-align: center;
 }
 
+.footer .page-source a{
+    color: white;
+    text-decoration: none;
+}
+
 /* Grid until minimum width */
 @media (min-width: 900px) {
     .contact-info{
@@ -926,9 +932,7 @@ body{
 
 /* styles for desktop */
 @media screen and (min-device-width: 640px){
-    .contact-info-container{
-        
-    }
+
 }
 
 
