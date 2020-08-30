@@ -526,9 +526,14 @@ body{
 @media screen and (min-device-width: 750px) and (min-width: 750px) {
     .work-experience-container,
     .education ul li{
+        max-width: 1200px;
         display: grid;
         grid-auto-rows: auto;
         grid-template-columns: repeat(5, 1fr);
+    }
+
+    .education ul li .education-right{
+        text-align: right;
     }
 
 }
@@ -700,9 +705,7 @@ body{
 
 /* styles for mobile */
 @media screen and (max-device-width: 640px){
-    .project-container{
 
-    }
 }
 
 /* styles for desktop */
