@@ -10,7 +10,7 @@
 
 body{
     background: white;
-    font-size: 14px;
+    font-size: 16px;
     line-height:  22px;
     color: black;
 }
@@ -548,14 +548,12 @@ body{
 
 .projects{
     text-align: center;
-    
 }
 
 .project-container{
     display: inline-block;
     text-align: center;
     margin-bottom: 40px;
-    width: 100%;
 }
 
 .project-contents{
@@ -702,12 +700,16 @@ body{
 
 /* styles for mobile */
 @media screen and (max-device-width: 640px){
+    .project-container{
 
+    }
 }
 
 /* styles for desktop */
 @media screen and (min-device-width: 640px){
-    
+    .project-container{
+        max-width: 1200px;
+    }
 }
 
 
