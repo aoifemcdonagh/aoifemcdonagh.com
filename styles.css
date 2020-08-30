@@ -969,7 +969,66 @@ body{
 }
 
 
-/* Blog page styles */
+/* 
+
+   ###    ########   #######  ##     ## ######## 
+  ## ##   ##     ## ##     ## ##     ##    ##    
+ ##   ##  ##     ## ##     ## ##     ##    ##    
+##     ## ########  ##     ## ##     ##    ##    
+######### ##     ## ##     ## ##     ##    ##    
+##     ## ##     ## ##     ## ##     ##    ##    
+##     ## ########   #######   #######     ##  
+
+*/
+
+.about-page{
+    text-align: center;
+    background-color: rgb(245, 241, 241);
+}
+
+.about-container{
+    display: inline-block;
+    margin: 50px 50px;
+}
+
+.about-text{
+    text-align: left;
+}
+
+.about-text p{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+/* styles for mobile */
+@media screen and (max-device-width: 640px) and (max-width: 640px){
+    .about-container{
+        margin: 50px 20px;
+    }
+}
+
+/* styles for desktop */
+@media screen and (min-device-width: 640px) and (min-width: 640px){
+    .about-container{
+        max-width: 800px;
+        margin: 150px 50px;
+    }
+        
+}
+
+
+
+/* Blog page styles 
+
+########  ##        #######   ######   
+##     ## ##       ##     ## ##    ##  
+##     ## ##       ##     ## ##        
+########  ##       ##     ## ##   #### 
+##     ## ##       ##     ## ##    ##  
+##     ## ##       ##     ## ##    ##  
+########  ########  #######   ######  
+
+*/
 
 .blog-hero-image{
     background-image: url("/images/lake.jpeg");
@@ -994,8 +1053,42 @@ body{
     font-size: 20px;
 }
 
+.posts{
+    text-align: center;
+}
+
+.post-container{
+    text-align: center;
+    display: inline;
+    max-width: 1200px;
+}
+
+.post-image {
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+    background-image: url("/images/blog/wings2.jpg");
+    background-size: cover;
+}
+
+.post-contents{
+    display: inline-block;
+    max-width: 1200px;
+    text-align: left;
+    
+}
+
+
+
+
 /* styles for mobile */
 @media screen and (max-device-width: 640px) and (max-width: 640px){
+    .blog-hero-image{
+        background-size: cover;
+        position: relative;
+        background-position-y: -100px;
+    }
+    
     .blog-hero-content{
         display: flex;
         
@@ -1033,4 +1126,26 @@ body{
         font-size: 60px;
         line-height: 75px;
     }
+
+    .project-container{
+        width: 70vw;
+    }
+}
+
+
+
+/*  
+
+########   #######   ######  ########  ######  
+##     ## ##     ## ##    ##    ##    ##    ## 
+##     ## ##     ## ##          ##    ##       
+########  ##     ##  ######     ##     ######  
+##        ##     ##       ##    ##          ## 
+##        ##     ## ##    ##    ##    ##    ## 
+##         #######   ######     ##     ######  
+
+*/
+
+.post-container{
+
 }
