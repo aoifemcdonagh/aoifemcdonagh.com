@@ -715,6 +715,82 @@ body{
     }
 }
 
+/*
+
+   ###    ##      ##    ###    ########  ########   ######  
+  ## ##   ##  ##  ##   ## ##   ##     ## ##     ## ##    ## 
+ ##   ##  ##  ##  ##  ##   ##  ##     ## ##     ## ##       
+##     ## ##  ##  ## ##     ## ########  ##     ##  ######  
+######### ##  ##  ## ######### ##   ##   ##     ##       ## 
+##     ## ##  ##  ## ##     ## ##    ##  ##     ## ##    ## 
+##     ##  ###  ###  ##     ## ##     ## ########   ######  
+
+*/
+
+.awards{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px ; 
+}
+
+.award-container{
+    display: inline-block;
+}
+
+.award-container ul li{
+    display: flex;
+}
+
+.award-contents .award-description{
+    grid-column: span 3;
+    padding: 15px 30px;
+    text-align: left;
+}
+
+.award-contents .award-image{
+    grid-column: span 3;
+    align-items: center;
+}
+
+.award-image img{
+    max-height: 400px;
+    max-width: 400px;
+    margin: 10px;
+    border-radius: 5% ;
+}
+
+
+
+/* styles for mobile */
+@media screen and (max-device-width: 1000px) and (max-width: 1000px){
+    .awards{
+        padding-bottom: 0px;
+    }
+    .award-image{
+        justify-content: center;
+    }
+    .award-description{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .award-image img{
+        width: 80vw;
+        max-width: 400px;
+    }
+    
+}
+
+/* styles for desktop */
+@media screen and (min-device-width: 1000px) and (min-width: 1000px){
+    .award-contents{
+        max-width: 1200px;
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+}
+
 
 /* Interests styles
 
