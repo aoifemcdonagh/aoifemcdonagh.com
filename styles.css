@@ -997,6 +997,7 @@ body{
         display: grid;
         grid-auto-rows: auto;
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
     
 }
