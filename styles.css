@@ -342,7 +342,7 @@ body{
 .summary p{
     text-align: left; 
     font-size: 16px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .summary-details{
@@ -377,7 +377,7 @@ body{
 }
 
 .summary-about{
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 .summary-about ul li{
@@ -997,6 +997,7 @@ body{
         display: grid;
         grid-auto-rows: auto;
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
     
 }
